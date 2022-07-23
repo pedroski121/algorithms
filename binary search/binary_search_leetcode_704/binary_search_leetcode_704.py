@@ -1,4 +1,3 @@
-# Question
 
 # Given an array of integers nums which is sorted in ascending order, 
 # and an integer target, write a function to search target in nums. 
@@ -20,7 +19,7 @@ def binary_search(nums,target):
         mid = int((low+high)/2)
         guess = nums[mid]
         if guess == target:
-            print(f"Your target {target} was found at position {mid} counting from 0")
+            print(f"{target} exists in nums and its index is {mid}")
             return mid
         elif guess > target:
             high = mid - 1

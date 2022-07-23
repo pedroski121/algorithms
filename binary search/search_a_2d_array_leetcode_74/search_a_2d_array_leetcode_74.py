@@ -11,6 +11,7 @@
 
 # Solution 1 with O(mlogn) aka quicksort
 def searchMatrixSort(matrix, target):
+    print('Solution 1')
     for array in matrix:
         low = 0
         high = len(array) - 1
@@ -31,6 +32,7 @@ print(searchMatrixSort([[1,3,5,7],[10,11,16,20],[23,30,34,60]],60))
 
 # Solution 2 with O(logM + logN). This solution is faster than solution 1 but longer to implement  
 def searchMatrix(matrix,target):
+    print('\nSolution 2')
     low = 0 
     high = len(matrix) - 1
     array = []
@@ -63,5 +65,5 @@ def searchMatrix(matrix,target):
     return False
 
 
-print(searchMatrix([[1,3,5,7],[10,11,16,20],[23,30,34,60]],61))
+print(searchMatrix([[1,3,5,7],[10,11,16,20],[23,30,34,60]],60))
 # print False
